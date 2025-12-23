@@ -123,7 +123,7 @@ const christmasSpecials = [
     title: "Spyfall, Part 1",
     doctor: "13th Doctor (Jodie Whittaker)",
     year: 2020,
-    blurb: "The Doctor and her companions are recruited by MI6 to investigate a series of alien attacks on intelligence agents globally, leading to the shocking discovery that their MI6 contact "O" is actually a new incarnation of the Master.",
+    blurb: "The Doctor and her companions are recruited by MI6 to investigate a series of alien attacks on intelligence agents globally, leading to the shocking discovery that their MI6 contact \"O\" is actually a new incarnation of the Master.",
     quote: "'That's my name, and that is why I chose it. So satisfying! Doctor, I... I did say look for the spymaster. Or should I say spy... Master.'",
     image: "assets/spyfall-part-1.jpg"
   },
