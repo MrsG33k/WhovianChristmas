@@ -1,0 +1,32 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0b1020;
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+h1 {
+  margin-bottom: 1rem;
+}
