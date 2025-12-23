@@ -7,7 +7,30 @@ const christmasSpecials = [
     quote: "'I'm going to get killed by a christmas tree!'",
     image: "assets/the-christmas-invasion.jpg"
   },
-  
+ {   
+    title: "The Runaway Bride",
+    doctor: "10th Doctor (David Tennant)",
+    year: 2006,
+    blurb: "Donna Noble, killer robots, and a very angry wedding.",
+    quote: "'I missed my wedding, lost my job and became a widow on the same day. Sort of.'",
+    image: "assets/the-runaway-bride.jpg"
+  },
+  {
+    title: "Voyage of the Damned",
+    doctor: "10th Doctor (David Tennant)",
+    year: 2007,
+    blurb: "The Doctor teams up with a waitress to save the Titanic spaceship.",
+    quote: "'I'm the Doctor. I'm a Time Lord. I'm from the planet Gallifrey in the Constellation of Kasterborous. I'm 903 years old and I'm the man who is gonna save your lives and all 6 billion people on the planet below. You got a problem with that?'",
+    image: "assets/voyage-of-the-damned.jpg"
+  },
+  {
+    title: "The Next Doctor",
+    doctor: "10th Doctor (David Tennant)",
+    year: 2008,
+    blurb: "The DoctorDoctor teams up with a human man who believes he's a future incarnation of the Doctor to fight Cybermen threatening Victorian London with a giant CyberKing",
+    quote: "' TARDIS. T - A - R - D - I - S. It stands for Tethered Aerial Release Developed in Style! Do you see?'",
+    image: "assets/the-next-doctor.jpg"
+  },
   {
     title: "A Christmas Carol",
     doctor: "11th Doctor (Matt Smith)",
@@ -16,14 +39,6 @@ const christmasSpecials = [
     quote: "'In 900 years of time and space, I've never met anyone who wasn't important'",
     image: "assets/a-christmas-carol.jpg"
   },
-  {
-    title: "The Runaway Bride",
-    doctor: "10th Doctor (David Tennant)",
-    year: 2006,
-    blurb: "Donna Noble, killer robots, and a very angry wedding.",
-    quote: "'I missed my wedding, lost my job and became a widow on the same day. Sort of.'",
-    image: "assets/the-runaway-bride.jpg"
-  }
 ];
 
 
@@ -53,7 +68,8 @@ function pickRandomStory() {
         doctorEl.textContent = story.doctor;
         yearEl.textContent = story.year;
         blurbEl.textContent = story.blurb;
-        quoteEl.textContent = story.quote;
+        quoteEl.textContent = story.quote ?? "";
+        quoteEl.style.display = story.quote ? "block" : "none";
         imageEl.src = story.image;
         imageEl.alt = story.title;
         //removes hidden class to show the result section

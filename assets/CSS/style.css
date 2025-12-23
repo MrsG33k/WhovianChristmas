@@ -1,13 +1,19 @@
 body {
   font-family: system-ui, sans-serif;
-  background: #0b1020;
-  color: #ffffff;
   text-align: center;
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  background: radial-gradient(1000px 720px at 50% 10%, #182246 0%, #070b16 55%, #040610 100%);
+  color:#fff;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 720px;
   margin: 4rem auto;
+  padding: 28px 28px 22px;
+  place-items: center;
 }
 
 button {
@@ -29,4 +35,94 @@ img {
 }
 h1 {
   margin-bottom: 1rem;
+  text-align: center;
+  font-size: clamp(24px, 6vw, 40px);
+  align-items: center;
+}
+
+.emphasis {
+  font-weight: 800;
+}
+
+
+/* The card that holds the result */
+.result-card{
+  width:min(720px, 92vw);
+  margin-top: 24px;
+  padding: 28px 28px 22px;
+  border-radius: 18px;
+  background: rgba(10, 14, 30, 0.7);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  backdrop-filter: blur(8px);
+}
+
+/* Title: big, bold, slightly fancy */
+.story-title{
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-shadow: 0 6px 28px rgba(0,0,0,0.35);
+}
+
+/* Meta: doctor + year grouped nicely */
+.story-meta{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: rgba(255,255,255,0.85);
+}
+
+.story-doctor{
+  margin:0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.story-year{
+  margin:0;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* Blurb: friendly body text */
+.story-blurb{
+  margin: 18px auto 18px;
+  max-width: 60ch;
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.90);
+}
+
+/* Quote: make it look like a quote, not just another sentence */
+.story-quote{
+  margin: 18px auto 0;
+  max-width: 62ch;
+  padding: 14px 16px;
+  border-left: 4px solid rgba(122,162,255,0.9);
+  background: rgba(122,162,255,0.10);
+  border-radius: 12px;
+  color: rgba(255,255,255,0.92);
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Optional little quotation marks */
+.story-quote::before{
+  content: "“";
+  font-size: 26px;
+  opacity: 0.7;
+  margin-right: 6px;
+}
+
+/* Image styling if/when you show it */
+.story-image{
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
 }

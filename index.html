@@ -8,17 +8,25 @@
 </head>
 <body>
     <main class="container">
-        <h1>❄️❄️ The Doctor Who Christmas Special Picker ❄️❄️</h1>
+        <h1 class="title">❄️ The Doctor Who<br>
+        <span class="emphasis">Christmas Special</span><br>
+        Picker ❄️</h1>
         <button id="pick-special-btn">Pick a Christmas Special!</button>
 
-        <section id="result" class="hidden">
-            <h2 id="title"></h2>
-            <p id = "doctor"></p>
-            <p id="year"></p>
-            <p id="blurb"></p>
-            <p id ="quote"></p>
-            <img id="image" alt="">
-        </section>
+    <section id="result" class="hidden result-card">
+        <h2 id="title" class="story-title"></h2>
+
+        <div class="story-meta">
+            <p id="doctor" class="story-doctor"></p>
+            <p id="year" class="story-year"></p>
+        </div>
+
+        <p id="blurb" class="story-blurb"></p>
+
+        <blockquote id="quote" class="story-quote"></blockquote>
+
+        <img id="image" class="story-image" alt="">
+    </section>
     </main>
     <script src="assets/JS/script.js"></script>
 </body>
