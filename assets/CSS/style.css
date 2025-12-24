@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: system-ui, sans-serif;
   text-align: center;
@@ -125,4 +131,48 @@ h1 {
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.12);
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Title: allow wrapping and tighten spacing */
+  .title {
+    font-size: 26px;
+    line-height: 1.2;
+    white-space: normal; /* just in case */
+  }
+
+  /* Buttons shouldn't force width */
+  button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Result card */
+  .result-card {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  /* Text blocks */
+  .story-blurb,
+  .story-quote {
+    max-width: 100%;
+  }
+
+  /* Images: absolutely no overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
